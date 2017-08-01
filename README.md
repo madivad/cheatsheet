@@ -1,4 +1,4 @@
-# tidbits
+# tidbits.
 
     git commit {filename} -m "{commit message}"
     git push
