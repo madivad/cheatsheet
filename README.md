@@ -18,6 +18,11 @@ this is our file:
 
     ~/git/my-awesome-script/hello-world.sh
 
+# 2. Scenario: download and work on a remote repo
+*my first forks were legit forks, however my recent stabs at nodejs have seen me clone a few repos straight to my computer and make changes. I now want to work on those changes and post to my github. Because I don't feel my "experimentation" is worthy of a pull/push into the original project, I am creating my own project. This is the workflow:*
+
+This scenario begins with an initial clone
+
 ----
 
 
