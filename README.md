@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # git Cheatsheet
 
 ## Start a local repo and want to push it up online to git
@@ -18,13 +19,18 @@ scratch notes here:
 
 
     `git clone https://github.com/madivad/project.git`
+=======
+# tidbits
+
+>>>>>>> readmeedit
 
     git commit {filename} -m "{commit message}"
     git push
     git rebase master {branch}  #<< Yeah, I didn't checkin
 
 
-
+    git remote add origin {remoteURL}
+    git remote -v
 
 
     git log --oneline --decorate --all --graph
