@@ -1,6 +1,15 @@
 # git cheatsheet
 *I'm new to git and github and I found that most online tutorials were either too basic or too complicated. I don't want to be just told how to do something, I want to understand WHY it is that I am doing something this way. So this is what I have learned after 2 days of youtube, stackexchange and general experimentation. I hope this help you, Cheers.*
 
+## Terminology:
+### git clone:
+In the beginning there was cloning. You begin a clone with `git clone {remote-repo}` (examples at the end of this page). This created a copy of the repo locally for you to play with.
+### Unstaged Changes:
+Changes to files that are not committed to be updated. Whilst working on these files you will be unable to change to another branch without either committing the changes or stashing them.
+### Staged Changes:
+Changes to files that have since been added to the commit phase, but not yet pushed to the remote repo
+### pull:
+
 ## I see there are THESE starting points:
 1. You have your own local repository (repo) and *local remote* \* repo. This is a great starting point for experimentation.
 1. You have your own repo (repository) on github and you want to continue doing some development on your local machine
@@ -164,5 +173,14 @@ What it also does is sets up a remote origin to that project. This comes in hand
       [branch "master"]
       remote = origin
       merge = refs/heads/working
+
+### git branch:
+
+    git branch -a               # show all branches
+    git branch {new-branch}     # create a branch named {new-branch}
+    git branch -d {branch}      # delete branch
+    git push origin -d {branch} # delete remote branch
+    git checkout {branch}       # checkout (or into) {branch}
+    
 
 # THE END
