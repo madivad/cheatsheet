@@ -1,28 +1,4 @@
-<<<<<<< HEAD
-# git Cheatsheet
-
-## Start a local repo and want to push it up online to git
-## Fork a repo from someone else's git
-## Bring your own repo to local (and make changes and upload)
-*an example of this is you have a repo online from a previous install or from another computer. You want to start working on it again*
-
-
-scratch notes here:
-
-    git commit {filename} -m "{commit message}"
-    git push
-    git rebase master {branch}  #<< Yeah, I didn't checkin
-
-
-    git log --oneline --decorate --all --graph
-
-
-
-    `git clone https://github.com/madivad/project.git`
-=======
 # tidbits
-
->>>>>>> readmeedit
 
     git commit {filename} -m "{commit message}"
     git push
@@ -47,8 +23,6 @@ scratch notes here:
 
     git remote add origin https://github.com/{user}/{project}.git
 
-
-    Git commands to remote github can be either by `HTTPS` or `SSH`:
 
 
     git remote add origin git@github.com{user}/{project}.git
