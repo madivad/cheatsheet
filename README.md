@@ -1,6 +1,32 @@
 # git cheatsheet
 *I'm new to git and github and I found that most online tutorials were either too basic or too complicated. I don't want to be just told how to do something, I want to understand WHY it is that I am doing something this way. So this is what I have learned after 2 days of youtube, stackexchange and general experimentation. I hope this help you, Cheers.*
 
+## Just show me the commands:
+*I was going to put this at the end, but then again, I'm probably going to come back to this page a bit and I'm going to not want to scroll down either:P*
+
+    git log --oneline --decorate --all --graph
+
+this will be your favourite log command. it provides a colourful ascii art tree of the current project.
+
+    git status                  # just that, what's the current location and file status
+    git branch -a               # show all branches
+    git branch {new-branch}     # create a branch named {new-branch}
+    git branch -d {branch}      # delete branch
+    git branch -D {branch}      # force delete branch
+    git branch -rd {branch}     # delete remote-tracking and local branch (but not origin branch!)
+    git push origin -d {branch} # delete remote branch. This includes above remote-tracking branch
+    git checkout {branch}       # checkout (or into) {branch}
+    git add {file}              # adds a file to the next commit
+    git commit                  # commits current staged changes (prompts for commit msg)
+    git commit -a               # performs an add and a commit at once
+    git commit -am "msg"        # performs add, and commit with {msg}
+    git push origin {branch}    # pushes your {branch} to origin
+    git remote add {alias} {url} # adds {alias} (usually origin) for remote {url}
+    git remote -v               # verify or show me the remote aliases
+    git fetch origin {branch}   # pull and merge origin branch to local
+    git pull origin master      # pull origin and update local master branch
+
+
 ## Terminology:
 ### git clone:
 In the beginning there was cloning. You begin a clone with `git clone {remote-repo}` (examples at the end of this page). This created a copy of the repo locally for you to play with.
@@ -154,10 +180,10 @@ will create a directory called: `cheatsheet`
 
     $ls -al cheatsheet/
     total 20
-    drwxr-xr-x 3 madivad madivad 4096 Aug  1 13:34 .
-    drwxr-xr-x 3 madivad madivad 4096 Aug  1 13:34 ..
-    drwxr-xr-x 8 madivad madivad 4096 Aug  1 13:34 .git
-    -rw-r--r-- 1 madivad madivad 4113 Aug  1 13:34 README.md
+    drwxr-xr-x 3 user group 4096 Date 1 13:34 .
+    drwxr-xr-x 3 user group 4096 Date 1 13:34 ..
+    drwxr-xr-x 8 user group 4096 Date 1 13:34 .git
+    -rw-r--r-- 1 user group 4113 Date 1 13:34 README.md
 
 What it also does is sets up a remote origin to that project. This comes in handy later.
 
@@ -174,6 +200,14 @@ What it also does is sets up a remote origin to that project. This comes in hand
       remote = origin
       merge = refs/heads/working
 
+### git log, git status
+
+    git status          # just that, what's the current location and file status
+    git log --oneline --decorate --all --graph
+
+this will be your favourite log command. it provides a colourful ascii art tree of the current project.
+
+
 ### git branch:
 
     git branch -a               # show all branches
@@ -182,6 +216,12 @@ What it also does is sets up a remote origin to that project. This comes in hand
     git push origin -d {branch} # delete remote branch
     git checkout {branch}       # checkout (or into) {branch}
     git add {file}              # adds a file to the next commit
-    
+    git commit                  # commits current staged changes (prompts for commit msg)
+    git commit -a               # performs an add and a commit at once
+    git commit -am "msg"        # performs add, and commit with {msg}
+    git push origin {branch}    # pushes your {branch} to origin
+    git remote add {alias} {url} # adds {alias} (usually origin) for remote {url}
+    git remote -v               # verify or show me the remote aliases
+
 
 # THE END
