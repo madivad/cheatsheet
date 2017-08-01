@@ -181,6 +181,7 @@ What it also does is sets up a remote origin to that project. This comes in hand
     git branch -d {branch}      # delete branch
     git push origin -d {branch} # delete remote branch
     git checkout {branch}       # checkout (or into) {branch}
+    git add {file}              # adds a file to the next commit
     
 
 # THE END
