@@ -1,4 +1,4 @@
-# git—Cheatsheet by Madivad
+# Cheatsheet by Madivad
 
 
     git commit {filename} -m "{commit message}"
